@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoTK - Download</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background-color: #f5f5f7;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            background: white;
+            padding: 48px 40px 32px;
+            text-align: center;
+            border-bottom: 1px solid #e5e5e7;
+        }
+
+        .logo {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 24px;
+        }
+
+        .logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #1d1d1f;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .subtitle {
+            color: #6e6e73;
+            font-size: 1.1em;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .download-section {
+            margin-bottom: 40px;
+        }
+
+        .download-section:last-of-type {
+            margin-bottom: 0;
+        }
+
+        .platform-title {
+            font-size: 1.3em;
+            color: #1d1d1f;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .download-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 16px;
+        }
+
+        .download-card {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            background: #fafafa;
+            border: 1px solid #e5e5e7;
+            border-radius: 8px;
+            text-decoration: none;
+            color: inherit;
+            transition: background-color 0.2s ease, border-color 0.2s ease;
+        }
+
+        .download-card:hover {
+            background: #f5f5f7;
+            border-color: #d2d2d7;
+        }
+
+        .platform-icon {
+            width: 48px;
+            height: 48px;
+            margin-right: 16px;
+            flex-shrink: 0;
+        }
+
+        .platform-icon svg {
+            width: 100%;
+            height: 100%;
+        }
+
+        .download-info {
+            flex: 1;
+        }
+
+        .platform-name {
+            font-size: 1.1em;
+            font-weight: 500;
+            color: #1d1d1f;
+            margin-bottom: 4px;
+        }
+
+        .platform-version {
+            font-size: 0.9em;
+            color: #6e6e73;
+        }
+
+        .download-icon {
+            width: 24px;
+            height: 24px;
+            margin-left: 12px;
+            color: #0071e3;
+        }
+
+        .footer {
+            padding: 24px 40px;
+            background: #fafafa;
+            border-top: 1px solid #e5e5e7;
+            text-align: center;
+            color: #6e6e73;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 600px) {
+            .header {
+                padding: 32px 24px 24px;
+            }
+
+            .content {
+                padding: 24px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            .download-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer {
+                padding: 20px 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <img src="images/gotk-icon.png" alt="GoTK Logo">
+            </div>
+            <h1>GoTK</h1>
+            <p class="subtitle">Download for your platform</p>
+        </div>
+
+        <div class="content">
+            <div class="download-section">
+                <h2 class="platform-title">Desktop</h2>
+                <div class="download-grid">
+                    <a href="https://github.com/soniczhangss/GoTikTok/releases/download/v1.0.59-rc.148-macos/GoTK.dmg" class="download-card">
+                        <div class="platform-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M17.05 20.28c-.98.95-2.05.88-3.08.4-1.09-.5-2.08-.48-3.24 0-1.44.62-2.2.44-3.06-.4C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/>
+                            </svg>
+                        </div>
+                        <div class="download-info">
+                            <div class="platform-name">macOS</div>
+                            <div class="platform-version">Version 1.0.59</div>
+                        </div>
+                        <svg class="download-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+                        </svg>
+                    </a>
+
+                    <a href="https://github.com/soniczhangss/gotk-windows/releases/download/1.4.1/gotk-v1.4.1-windows.exe" class="download-card">
+                        <div class="platform-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M3 5.45L10.5 4.4v7.15H3V5.45m0 13.1L10.5 19.6v-7.15H3v6.1m8.5 1.35l9.5 1.4V12.55H11.5v7.35m0-15.7v7.35H21V3.05l-9.5 1.4z"/>
+                            </svg>
+                        </div>
+                        <div class="download-info">
+                            <div class="platform-name">Windows x86</div>
+                            <div class="platform-version">Version 1.4.1</div>
+                        </div>
+                        <svg class="download-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+                        </svg>
+                    </a>
+
+                    <a href="https://github.com/soniczhangss/gotk-windows/releases/download/1.4.1/gotk-v1.4.1-windows-arm64.exe" class="download-card">
+                        <div class="platform-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M3 5.45L10.5 4.4v7.15H3V5.45m0 13.1L10.5 19.6v-7.15H3v6.1m8.5 1.35l9.5 1.4V12.55H11.5v7.35m0-15.7v7.35H21V3.05l-9.5 1.4z"/>
+                            </svg>
+                        </div>
+                        <div class="download-info">
+                            <div class="platform-name">Windows ARM64</div>
+                            <div class="platform-version">Version 1.4.1</div>
+                        </div>
+                        <svg class="download-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="download-section">
+                <h2 class="platform-title">Mobile</h2>
+                <div class="download-grid">
+                    <a href="https://github.com/soniczhangss/GoTikTok-Android/releases/download/v2.13.2/gotk-v2.13.2-android.apk" class="download-card">
+                        <div class="platform-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M17.6 9.48l1.84-3.18c.16-.31.04-.69-.26-.85a.637.637 0 0 0-.83.22l-1.88 3.24a11.43 11.43 0 0 0-8.94 0L5.65 5.67a.643.643 0 0 0-.87-.2c-.28.18-.37.54-.22.83L6.4 9.48A10.81 10.81 0 0 0 1 18h22a10.81 10.81 0 0 0-5.4-8.52M7 15.25a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5m10 0a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5z"/>
+                            </svg>
+                        </div>
+                        <div class="download-info">
+                            <div class="platform-name">Android</div>
+                            <div class="platform-version">Version 2.13.2</div>
+                        </div>
+                        <svg class="download-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            System Requirements: macOS 10.13+, Windows 10+, Android 5.0+
+        </div>
+    </div>
+</body>
+</html>
